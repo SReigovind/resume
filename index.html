@@ -1,187 +1,311 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sreegovind S — Resume</title>
-  <meta name="description" content="Resume of Sreegovind S — MSc AI & ML student with skills in Deep Learning, NLP, LLMs, TensorFlow, PyTorch, Keras, Django.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', Arial, sans-serif;
-      background-color: #f8fafc;
-      color: #1e293b;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 850px;
-      background: #ffffff;
-      margin: 40px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      padding: 40px 50px;
-    }
-    header {
-      border-bottom: 2px solid #e2e8f0;
-      text-align:center;
-      padding-bottom: 12px;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 32px;
-      font-weight: 700;
-      margin: 0;
-      color: #0f172a;
-    }
-    .contact {
-      margin-top: 6px;
-      font-size: 16px;
-      color: #475569;
-    }
-    h2 {
-      color: #1e3a8a;
-      border-left: 4px solid #2563eb;
-      padding-left: 8px;
-      font-size: 20px;
-      margin-top: 24px;
-      margin-bottom: 15px;
-    }
-    p, li {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-      margin: 6px 0;
-    }
-    .meta {
-      font-weight: 600;
-      color: #0f172a;
-    }
-    .muted {
-      color: #223333;
-      font-size: 16px;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 16px 25px;
-    }
-    footer {
-      text-align: center;
-      font-size: 13px;
-      color: #94a3b8;
-      margin-top: 32px;
-      border-top: 1px solid #e2e8f0;
-      padding-top: 12px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreegovind S | AI & ML Professional</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Configuration & Print Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+
+        /* Print optimization */
+        @media print {
+            body { background-color: white !important; }
+            .print-hidden { display: none !important; }
+            .print-shadow-none { box-shadow: none !important; border: 1px solid #e5e7eb !important; }
+            .print-break-inside-avoid { break-inside: avoid; }
+            section { page-break-inside: avoid; }
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>SREEGOVIND S</h1>
-      <div class="contact">
-        <a href="https://github.com/SReigovind">github.com/SReigovind  |  <a href="mailto:sreegovindsudarsan2003@gmail.com">sreegovindsudarsan2003@gmail.com</a>  |  <a href="https://www.linkedin.com/in/sreigovind/">linkedin.com/in/sreigovind</a>
-      </div>
-    </header>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        MSc Artificial Intelligence & Machine Learning student at Mahatma Gandhi University with a strong focus on Deep Learning, Natural Language Processing (NLP), and Large Language Models (LLMs). Passionate about using AI to enhance learning, communication, and accessibility. Skilled in Python, TensorFlow, PyTorch, and Keras with practical experience in developing AI-integrated educational applications.
-      </p>
-    </section>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-    <section>
-      <h2>Education</h2>
-      <p class="meta">Mahatma Gandhi University (MGU), Kottayam</p>
-      <p class="muted">MSc in Artificial Intelligence & Machine Learning — July 2024 – July 2026</p>
+        <!-- HEADER SECTION -->
+        <header class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12 mb-8 print-shadow-none flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-2">Sreegovind S</h1>
+                <h2 class="text-xl text-brand-600 font-medium mb-6">AI & Machine Learning Professional</h2>
 
-      <p class="meta" style="margin-top:8px;">Don Bosco College, Mannuthy (University of Calicut)</p>
-      <p class="muted">Bachelor of Computer Applications (BCA) — September 2021 – April 2024</p>
-    </section>
+                <p class="text-gray-600 leading-relaxed max-w-2xl mb-6">
+                    MSc Artificial Intelligence and Machine Learning student and UGC NET Qualified professional. Passionate about building socially impactful AI solutions, with a strong research interest in the fields of education and agriculture. Experienced in computer vision, natural language processing, and deep learning architectures.
+                </p>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div><strong>Languages:</strong> Python, JavaScript, HTML, CSS</div>
-        <div><strong>Frameworks:</strong> TensorFlow, PyTorch, Keras, Django</div>
-        <div><strong>Libraries:</strong> NumPy, Pandas</div>
-        <div><strong>Areas:</strong> Deep Learning, NLP, LLMs, Model Evaluation, Data Preprocessing</div>
-        <div><strong>Tools:</strong> Jupyter Notebook, VS Code, Git, Google Colab</div>
-        <div><strong>Soft Skills:</strong> Problem Solving, Critical Thinking, Collaboration, Communication</div>
-      </div>
-    </section>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm font-medium">
+                    <a href="mailto:sreegovindsudarsan2003@gmail.com" class="flex items-center gap-2 text-gray-600 hover:text-brand-600 transition-colors">
+                        <i class="fa-solid fa-envelope text-brand-500"></i>
+                        sreegovindsudarsan2003@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/sreigovind" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 hover:text-brand-600 transition-colors">
+                        <i class="fa-brands fa-linkedin text-brand-500"></i>
+                        linkedin.com/in/sreigovind
+                    </a>
+                    <a href="https://github.com/SReigovind" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-600 hover:text-brand-600 transition-colors">
+                        <i class="fa-brands fa-github text-brand-500"></i>
+                        github.com/SReigovind
+                    </a>
+                </div>
+            </div>
 
-    <section>
-  <h2>Projects</h2>
+            <!-- Optional: You can add a profile picture here if you want by uncommenting -->
+            <!--
+            <div class="flex-shrink-0">
+                <img src="profile.jpg" alt="Sreegovind S" class="w-32 h-32 rounded-full object-cover border-4 border-brand-50 shadow-md">
+            </div>
+            -->
+        </header>
 
-  <p class="meta">Thanal — Virtual NIR Estimation for Crop Health</p>
-  <p class="muted">Ongoing | Deep Learning, U-Net, Attention, Gradio | Oct 2025 – Present</p>
-  <ul>
-    <li>Built an Attention U-Net model to estimate VNIR from RGB leaf images for early crop stress and disease detection.</li>
-    <li>Trained on paired RGB–NIR capsicum dataset and deployed via a Gradio demo interface.</li>
-  </ul>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-  <p class="meta">NAVA Prototype — AI Plant Disease Advisor</p>
-  <p class="muted">AI System | Computer Vision, NLP, EfficientNet, LLaMA, Gradio | Jul 2025 – Dec 2025</p>
-  <ul>
-    <li>End-to-end system for detecting plant diseases and generating crop-specific treatment plans.</li>
-    <li>Supports 7 crops and 34 disease classes using EfficientNet-B0 with confidence-based reliability checks.</li>
-    <li>Hybrid pipeline combines rule-based safety advice with LLM-generated step-by-step prescriptions.</li>
-  </ul>
+            <!-- LEFT COLUMN (Main Content) -->
+            <div class="lg:col-span-2 space-y-8">
 
-  <p class="meta">codeTales — Learn Coding Through Stories</p>
-  <p class="muted">Final Year BCA Project | Django, HTML, CSS, JavaScript | Oct 2023 – Feb 2024</p>
-  <ul>
-    <li>Built an interactive story-based coding platform with narrative-driven programming challenges.</li>
-    <li>Developed a Django backend, responsive UI, and integrated AI feedback for personalized learning.</li>
-  </ul>
-    </section>
+                <!-- EDUCATION SECTION -->
+                <section>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-100 p-2 rounded-lg text-brand-600">
+                            <i class="fa-solid fa-graduation-cap w-5 h-5 flex items-center justify-center"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Education</h3>
+                    </div>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Deep Learning Essentials with Keras — Coursera</li>
-        <li>Introduction to Deep Learning & Neural Networks with Keras — IBM</li>
-        <li>Foundations of Cybersecurity — Google</li>
-      </ul>
-    </section>
+                    <div class="relative border-l-2 border-gray-200 ml-3 md:ml-4 space-y-8 print-break-inside-avoid">
+                        <!-- Edu 1 -->
+                        <div class="relative pl-6">
+                            <div class="absolute w-4 h-4 bg-brand-500 rounded-full -left-[9px] top-1.5 border-4 border-white"></div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
+                                <h4 class="text-lg font-bold text-gray-900">MSc Artificial Intelligence and Machine Learning</h4>
+                                <span class="text-sm font-medium text-brand-600">July 2024 - Present</span>
+                            </div>
+                            <p class="text-gray-700 font-medium mb-1">Mahatma Gandhi University (School of AI and Robotics), Kottayam</p>
+                            <p class="text-sm text-gray-500">Average SGPA: <span class="font-bold text-gray-700">8.87</span></p>
+                        </div>
 
-    <section>
-      <h2>Languages</h2>
-      <ul>
-        <li>Malayalam — Native</li>
-        <li>English — Professional Proficiency</li>
-        <li>Hindi — Intermediate</li>
-      </ul>
-    </section>
+                        <!-- Edu 2 -->
+                        <div class="relative pl-6">
+                            <div class="absolute w-4 h-4 bg-gray-300 rounded-full -left-[9px] top-1.5 border-4 border-white"></div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
+                                <h4 class="text-lg font-bold text-gray-900">Bachelor of Computer Applications (BCA)</h4>
+                                <span class="text-sm font-medium text-gray-500">Sept 2021 - April 2024</span>
+                            </div>
+                            <p class="text-gray-700 font-medium mb-1">University of Calicut (Don Bosco College Mannuthy), Thrissur</p>
+                            <p class="text-sm text-gray-500">CGPA: <span class="font-bold text-gray-700">8.375</span></p>
+                        </div>
+                    </div>
+                </section>
 
-    <section>
-      <h2>Interests</h2>
-      <p>Deep Learning, NLP, Large Language Models, AI in Education, Human–Computer Interaction, Data-driven Learning Systems</p>
-    </section>
+                <!-- PROJECTS SECTION -->
+                <section>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-100 p-2 rounded-lg text-brand-600">
+                            <i class="fa-solid fa-flask w-5 h-5 flex items-center justify-center"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900">Featured Projects</h3>
+                    </div>
 
-    
-    <section>
-      <h2>References</h2>
-      <ul>
-        <li><strong>Prof. Dr. Bindu VR</strong><br>Hon. Director, School of Artificial Intelligence and Robotics<br>Mahatma Gandhi University, Kottayam<br><a href="mailto:binduvr@mgu.ac.in">binduvr@mgu.ac.in</a></li>
-        <li><strong>Dr. Deepa V</strong><br>Assistant Professor, School of Artificial Intelligence and Robotics<br>Mahatma Gandhi University, Kottayam<br><a href="mailto:deepav@mgu.ac.in">deepav@mgu.ac.in</a></li>
-      </ul>
-    </section>
+                    <div class="space-y-6">
+                        <!-- Project 1 -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid hover:shadow-md transition-shadow">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                                <h4 class="text-lg font-bold text-gray-900">NAVA Phase 1 AI Agricultural Assistant</h4>
+                                <span class="text-xs font-semibold bg-brand-50 text-brand-700 px-3 py-1 rounded-full w-max mt-2 sm:mt-0">MSc Project</span>
+                            </div>
+                            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-2 mt-3">
+                                <li>Validated a Vision-Language dual pipeline for leaf disease detection and prescription generation.</li>
+                                <li>Built a 34-class vision classifier and integrated LLM APIs to provide actionable agricultural prescriptions.</li>
+                                <li>Currently developing the initial prototype further into a comprehensive AI Agricultural Assistant.</li>
+                            </ul>
+                        </div>
 
-    <footer>
-    </footer>
-  </div>
+                        <!-- Project 2 -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid hover:shadow-md transition-shadow">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                                <h4 class="text-lg font-bold text-gray-900">Thanal Realtime Plant Stress Monitoring</h4>
+                                <span class="text-xs font-semibold bg-orange-50 text-orange-700 px-3 py-1 rounded-full w-max mt-2 sm:mt-0">eYantra Innovation Challenge</span>
+                            </div>
+                            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-2 mt-3">
+                                <li>Built a real-time monitoring system to detect early stress in plants.</li>
+                                <li>Designed a UNet-Attention model to generate virtual NIR estimations from standard RGB images.</li>
+                                <li>Implemented an early warning system using plant history stored in time-series CSV data files.</li>
+                                <li><strong>Selected for eYantra eYIC National Finals</strong> conducted by IIT Bombay.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid hover:shadow-md transition-shadow">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                                <h4 class="text-lg font-bold text-gray-900">codeTales Code Learning</h4>
+                                <span class="text-xs font-semibold bg-green-50 text-green-700 px-3 py-1 rounded-full w-max mt-2 sm:mt-0">BCA Project</span>
+                            </div>
+                            <ul class="list-disc list-outside ml-5 text-gray-600 space-y-2 mt-3">
+                                <li>Created an interactive, story-based coding platform featuring programming puzzles embedded in narratives.</li>
+                                <li>Built a Django backend and integrated AI-generated feedback to provide personalized assistance, increasing learner engagement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RIGHT COLUMN (Sidebar Content) -->
+            <div class="space-y-8">
+
+                <!-- SKILLS SECTION -->
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-100 p-2 rounded-lg text-brand-600">
+                            <i class="fa-solid fa-code w-5 h-5 flex items-center justify-center"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Technical Skills</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Languages & Frameworks</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Python</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">TensorFlow</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">PyTorch</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Keras</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Django</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Core Areas</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-brand-50 text-brand-700 px-3 py-1 rounded-md text-sm font-medium">Deep Learning</span>
+                                <span class="bg-brand-50 text-brand-700 px-3 py-1 rounded-md text-sm font-medium">Machine Learning</span>
+                                <span class="bg-brand-50 text-brand-700 px-3 py-1 rounded-md text-sm font-medium">NLP</span>
+                                <span class="bg-brand-50 text-brand-700 px-3 py-1 rounded-md text-sm font-medium">Computer Vision</span>
+                                <span class="bg-brand-50 text-brand-700 px-3 py-1 rounded-md text-sm font-medium">LLMs</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Libraries & Tools</h5>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">NumPy</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Pandas</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Jupyter</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">VS Code</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-md text-sm font-medium">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS SECTION -->
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-100 p-2 rounded-lg text-brand-600">
+                            <i class="fa-solid fa-certificate w-5 h-5 flex items-center justify-center"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Certifications</h3>
+                    </div>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-award text-brand-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-gray-900">UGC NET Qualified</p>
+                                <p class="text-xs text-gray-500">December 2025</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-award text-brand-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-gray-900">Introduction to Deep Learning & Neural Networks with Keras</p>
+                                <p class="text-xs text-gray-500">IBM</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-award text-brand-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-gray-900">Deep Learning Essentials with Keras</p>
+                                <p class="text-xs text-gray-500">Coursera</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-award text-brand-500 mt-1"></i>
+                            <div>
+                                <p class="text-sm font-bold text-gray-900">Retrieval Augmented Generation (RAG)</p>
+                                <p class="text-xs text-gray-500">DeepLearning.AI</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- REFERENCES SECTION -->
+                <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 print-shadow-none print-break-inside-avoid">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-brand-100 p-2 rounded-lg text-brand-600">
+                            <i class="fa-solid fa-users w-5 h-5 flex items-center justify-center"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">References</h3>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+                            <p class="text-sm font-bold text-gray-900">Prof. Dr. Bindu VR</p>
+                            <p class="text-xs text-gray-600 mb-1">Hon. Director, School of AI and Robotics, MGU</p>
+                            <a href="mailto:binduvr@mgu.ac.in" class="text-xs text-brand-600 hover:underline">binduvr@mgu.ac.in</a>
+                        </div>
+                        <div class="pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+                            <p class="text-sm font-bold text-gray-900">Dr. Deepa V</p>
+                            <p class="text-xs text-gray-600 mb-1">Assistant Professor, School of AI and Robotics, MGU</p>
+                            <a href="mailto:deepav@mgu.ac.in" class="text-xs text-brand-600 hover:underline">deepav@mgu.ac.in</a>
+                        </div>
+                        <div class="pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+                            <p class="text-sm font-bold text-gray-900">Ms. Mintu Movi</p>
+                            <p class="text-xs text-gray-600 mb-1">Assistant Professor, School of AI and Robotics, MGU</p>
+                            <a href="mailto:mintu@mgu.ac.in" class="text-xs text-brand-600 hover:underline">mintu@mgu.ac.in</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-sm text-gray-400 print-hidden">
+            <p>Built with HTML & Tailwind CSS. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
